@@ -1,333 +1,181 @@
-# Awesome-Managed-Apache-Kafka-Service
-
-## Top Managed Apache Kafka Service Ecosystem
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Managed Kafka, Event Streaming & Self-Hosted Data Backbones*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **commercial managed Kafka platforms** and **open-source projects** that provision, operate, and scale Apache Kafka clusters — powering event-driven architectures, real-time analytics, and data pipelines without the operational burden of self-managing brokers, Zookeeper, and storage.
-
-
-
-**Examples** include Amazon MSK, Confluent Cloud, Aiven for Apache Kafka, Redpanda Cloud, Upstash Kafka, Instaclustr Kafka, CloudKarafka, Lenses.io, IBM Event Streams, and Azure Event Hubs (the category leaders).
-
-
-
-**Open-source emphasis**: Managed Kafka is anchored by **Apache Kafka** as the de facto standard, with **Redpanda** and **Apache Pulsar** providing high-performance alternatives. **Kafka Streams**, **ksqlDB**, and **Apache Flink** handle stream processing, while **Debezium** powers CDC and **Kafka Connect** enables data integration. **Strimzi** and **Koperator** deliver Kubernetes-native Kafka operations, **Cruise Control** handles cluster rebalancing, and **Kafka UI**, **AKHQ**, and **Kafdrop** provide management interfaces. **Karafka** and **Benthos** round out the ecosystem. This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Amazon MSK](https://aws.amazon.com/msk/)**  
-
-  **AWS's fully managed Kafka** — provision Kafka clusters without managing infrastructure . **MSK Serverless** for automatic scaling and pay-per-use . **Native integration with AWS services** including Lambda, S3, and IAM . **MSK Connect** for managed Kafka Connect connectors . **Best for AWS-native Kafka workloads** .
-
-
-
-- **[Confluent Cloud](https://www.confluent.io/confluent-cloud/)**  
-
-  **The leading managed Kafka platform** — fully managed Kafka, ksqlDB, Flink, connectors, and schema registry . **Created by Kafka's original developers** . **The enterprise standard for event streaming** . **Best for organizations wanting Kafka without operational burden** .
-
-
-
-- **[Aiven for Apache Kafka](https://aiven.io/kafka)**  
-
-  **Managed Kafka on multiple clouds** — open-source data platform with Terraform support . **Available on AWS, GCP, Azure, and DigitalOcean** . **All Kafka ecosystem tools included** . **Best for multi-cloud Kafka** .
-
-
-
-- **[Redpanda Cloud](https://redpanda.com/)**  
-
-  **Kafka-compatible streaming platform in C++** — no Zookeeper, no JVM . **10x faster than Kafka** in some benchmarks . **BYOC (Bring Your Own Cloud)** deployment option . **Best for high-performance streaming** .
-
-
-
-- **[Upstash Kafka](https://upstash.com/kafka)**  
-
-  **Serverless Kafka** — pay-per-request messaging with REST API . **Global replication and low latency** . **Best for serverless streaming** .
-
-
-
-- **[Instaclustr Kafka](https://www.instaclustr.com/)**  
-
-  **Managed Kafka and open-source data platform** — Kafka, Cassandra, PostgreSQL, and more . **Best for multi-service data infrastructure** .
-
-
-
-- **[CloudKarafka](https://www.cloudkarafka.com/)**  
-
-  **Managed Kafka hosting** — simple, affordable Kafka clusters . **Best for small to medium workloads** .
-
-
-
-- **[Lenses.io](https://lenses.io/)**  
-
-  **Data streaming platform for Kafka** — observability, governance, and developer experience . **Best for Kafka operations** .
-
-
-
-- **[IBM Event Streams](https://www.ibm.com/products/event-streams)**  
-
-  **IBM's managed Kafka** — enterprise-grade with IBM Cloud integration . **Best for IBM ecosystem users** .
-
-
-
-- **[Azure Event Hubs](https://azure.microsoft.com/en-us/products/event-hubs/)**  
-
-  **Azure's big data streaming platform** — Kafka-compatible endpoint, millions of events per second . **Event Hubs Capture** for automatic data loading . **Best for Azure-native streaming** .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-### Kafka Core & Distributions
-
-
-
-- **[Apache Kafka](https://github.com/apache/kafka)**  
-
-  **The de facto standard for event streaming**, Apache-2.0 licensed with **28,000+ GitHub stars** . **Distributed, fault-tolerant, high-throughput pub/sub messaging** . **Kafka Connect for source/sink connectors** and **Kafka Streams for stream processing** . **The foundation for most managed Kafka platforms** . **Best for enterprise event streaming** .
-
-
-
-- **[Redpanda](https://github.com/redpanda-data/redpanda)**  
-
-  **Kafka-compatible streaming platform in C++**, BSL licensed (free for most uses) . **No Zookeeper, no JVM** — simpler operations . **10x faster than Kafka** in some benchmarks . **Best for teams wanting Kafka compatibility with better performance** .
-
-
-
-- **[Apache Pulsar](https://github.com/apache/pulsar)**  
-
-  **Distributed messaging and streaming platform**, Apache-2.0 licensed with **14,000+ GitHub stars** . **Multi-tenancy, geo-replication, and tiered storage** . **The main alternative to Kafka** . **Best for multi-tenant and geo-distributed streaming** .
-
-
-
-- **[NATS](https://github.com/nats-io/nats-server)**  
-
-  **Cloud-native messaging system**, Apache-2.0 licensed with **15,000+ GitHub stars** . **Lightweight, high-performance pub/sub** with JetStream for persistence . **Best for IoT and edge streaming** .
-
-
-
-### Kubernetes-Native Kafka Operations
-
-
-
-- **[Strimzi](https://github.com/strimzi/strimzi-kafka-operator)**  
-
-  **Kubernetes operator for Apache Kafka**, Apache-2.0 licensed with **4,500+ GitHub stars** . **Deploy and manage Kafka clusters on Kubernetes** . **Supports Kafka Connect, MirrorMaker, and Cruise Control** . **The de facto Kubernetes Kafka operator** . **Best for Kafka on Kubernetes** .
-
-
-
-- **[Koperator (Banzaicloud)](https://github.com/banzaicloud/koperator)**  
-
-  **Kubernetes operator for Kafka**, Apache-2.0 licensed . **Advanced features including Cruise Control and monitoring** . **Best for Kafka on Kubernetes** .
-
-
-
-- **[Confluent Operator](https://github.com/confluentinc/operator)** — Commercial Kubernetes operator for Confluent Platform .
-
-
-
-### Stream Processing
-
-
-
-- **[Apache Flink](https://github.com/apache/flink)**  
-
-  **The de facto standard for stateful stream processing**, Apache-2.0 licensed with **24,000+ GitHub stars** . **Exactly-once semantics, event-time processing, and savepoints** . **Best for mission-critical stream processing** .
-
-
-
-- **[Kafka Streams](https://github.com/apache/kafka)**  
-
-  **Stream processing library for Kafka**, Apache-2.0 licensed . **No separate cluster** — runs in your application . **Exactly-once semantics and interactive queries** . **Best for Kafka-native stream processing** .
-
-
-
-- **[ksqlDB](https://github.com/confluentinc/ksql)**  
-
-  **Streaming SQL for Kafka**, Confluent Community License . **SQL interface for Kafka Streams** . **Continuous queries, materialized views, and pull queries** . **Best for SQL-proficient teams** .
-
-
-
-- **[Apache Spark Structured Streaming](https://github.com/apache/spark)**  
-
-  **Unified batch and stream processing**, Apache-2.0 licensed . **Micro-batch with exactly-once semantics** . **Best for teams already using Spark** .
-
-
-
-- **[Apache Beam](https://github.com/apache/beam)**  
-
-  **Unified programming model for batch and stream**, Apache-2.0 licensed . **Portable across Flink, Spark, and Dataflow** . **Best for portable pipelines** .
-
-
-
-### Data Movement & CDC
-
-
-
-- **[Debezium](https://github.com/debezium/debezium)**  
-
-  **The leading open-source CDC platform**, Apache-2.0 licensed with **10,000+ GitHub stars** . **Captures row-level changes from databases** . **Kafka Connect-based** . **Best for database replication** .
-
-
-
-- **[Kafka Connect](https://github.com/apache/kafka)**  
-
-  **Source/sink connectors for Kafka**, Apache-2.0 licensed . **200+ connectors** . **Best for data integration** .
-
-
-
-- **[Benthos (Redpanda Connect)](https://github.com/redpanda-data/connect)**  
-
-  **Stream processing without code**, Apache-2.0 licensed with **8,000+ GitHub stars** . **Declarative YAML configuration for streaming ETL** . **Best for code-free stream pipelines** .
-
-
-
-- **[Vector](https://github.com/vectordotdev/vector)**  
-
-  **High-performance observability data pipeline**, MPL-2.0 licensed with **18,000+ GitHub stars** . **Collect, transform, and route logs and events** . **Best for observability data** .
-
-
-
-### Kafka Management & Operations
-
-
-
-- **[Kafka UI](https://github.com/provectus/kafka-ui)**  
-
-  **Open-source web UI for Apache Kafka**, Apache-2.0 licensed with **10,000+ GitHub stars** . **Multi-cluster management with topics, consumers, and connectors** . **Best for Kafka management** .
-
-
-
-- **[AKHQ](https://github.com/tchiotludo/akhq)**  
-
-  **Kafka GUI for topics, partitions, and consumer groups**, Apache-2.0 licensed . **Topic data browsing, schema registry, and connect** . **Best for Kafka operations** .
-
-
-
-- **[Kafdrop](https://github.com/obsidiandynamics/kafdrop)**  
-
-  **Web UI for viewing Kafka topics and consumer groups**, Apache-2.0 licensed . **Lightweight and simple** . **Best for Kafka browsing** .
-
-
-
-- **[Cruise Control](https://github.com/linkedin/cruise-control)**  
-
-  **Kafka cluster management and rebalancing**, BSD-2-Clause licensed . **Automated partition rebalancing and self-healing** . **Best for Kafka cluster operations** .
-
-
-
-- **[Karafka](https://github.com/karafka/karafka)**  
-
-  **Ruby framework for Kafka processing**, LGPL-3.0 licensed . **High-performance consumer framework** . **Best for Ruby Kafka applications** .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Apache Samza** — Stream processing on Kafka .
-
-- **Apache Storm** — Real-time computation (legacy) .
-
-- **Apache Heron** — Twitter's stream processing (retired) .
-
-- **Apache Flume** — Log aggregation (legacy) .
-
-- **Logstash** — Data collection and transformation .
-
-- **Fluentd** — Unified logging layer .
-
-- **Fluent Bit** — Lightweight log processor .
-
-- **Embulk** — Pluggable bulk data loader .
-
-- **Apache SeaTunnel** — High-performance data integration .
-
-- **Apache NiFi** — Data flow automation .
-
-- **Kafka MirrorMaker** — Cross-cluster replication .
-
-- **Conduktor** — Kafka management (commercial with free tier) .
-
-
-
-**Frameworks for building custom managed Kafka solutions**: Combine **Apache Kafka** for high-throughput event streaming . Use **Strimzi** or **Koperator** for Kubernetes-native Kafka operations . Deploy **Redpanda** for Kafka compatibility with better performance . Choose **Apache Flink** or **Kafka Streams** for stream processing . Integrate **Debezium** for CDC from databases . Use **ksqlDB** for SQL-based stream processing . Manage clusters with **Kafka UI**, **AKHQ**, or **Kafdrop** . Optimize with **Cruise Control** for automated rebalancing . Note that true managed Kafka with global infrastructure, automatic scaling, and vendor-supported SLAs (Amazon MSK, Confluent Cloud, Redpanda Cloud) remains primarily commercial territory; open-source stacks provide strong event streaming, stream processing, and Kubernetes operations foundations that require integration for complete managed Kafka deployments.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Managed Kafka platforms handle high-volume data in motion. Self-hosted solutions require proper security hardening, access controls, and compliance with data privacy regulations.
-
-- **License considerations**: Redpanda uses BSL (free for most uses but not OSI), ksqlDB uses Confluent Community License, and NATS uses Apache-2.0. Verify licensing against your use case before committing .
-
-- **Exactly-once semantics are hard** — Kafka, Pulsar, and NATS JetStream each handle delivery guarantees differently. Understand your requirements before choosing .
-
-- **Event ordering matters** — Kafka guarantees order per partition; other systems may not. Design for idempotency and handle out-of-order events .
-
-- **Zookeeper is being deprecated** — Kafka KRaft mode eliminates Zookeeper dependency. Use KRaft for new deployments .
-
-- The open-source ecosystem provides strong event streaming, stream processing, and Kubernetes operations foundations, but **managed infrastructure, global scale, and vendor-supported SLAs** remain primarily commercial offerings.
-
-
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Managed Apache Kafka Service Banner" width="100%">
+</p>
+
+# 🚀 Awesome Managed Apache Kafka Service Ecosystem 📡
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Managed-Apache-Kafka-Service"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Managed-Apache-Kafka-Service?style=flat-square&logo=github" alt="Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Managed-Apache-Kafka-Service/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Managed-Apache-Kafka-Service?style=flat-square&logo=github" alt="Forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Managed-Apache-Kafka-Service/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Managed-Apache-Kafka-Service?style=flat-square&logo=github" alt="Issues"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Managed-Apache-Kafka-Service/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Managed-Apache-Kafka-Service?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> **Curated List of SaaS Products, Commercial Cloud Streaming Services & Open-Source GitHub Projects**  
+> *Focused on Managed Kafka, Event-Driven Architecture, Real-Time Analytics & Self-Hosted Data Backbones*  
+> **Last updated: October 2026** 📅
 
 ---
 
+This repository tracks notable **commercial managed Kafka platforms** and **open-source projects** that provision, operate, and scale Apache Kafka clusters — powering event-driven architectures, real-time analytics, and data pipelines without the operational burden of self-managing brokers, Zookeeper / KRaft, and storage.
 
+---
 
-**Made for data engineers, platform teams, and organizations seeking managed Kafka sovereignty.**  
+## 📋 Table of Contents
 
-Let's make managed Apache Kafka services more open, transparent, and reliable.
+- [☁️ SaaS & Commercial Managed Platforms](#-saas--commercial-managed-platforms)
+- [⚡ Market Overview & Sector Analysis](#-market-overview--sector-analysis)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+  - [📦 Kafka Core & Streaming Engines](#-kafka-core--streaming-engines)
+  - [☸️ Kubernetes Operators](#-kubernetes-operators)
+  - [🔄 Stream Processing Frameworks](#-stream-processing-frameworks)
+  - [🔀 Data Movement, Connectors & CDC](#-data-movement-connectors--cdc)
+  - [🖥️ Kafka UI & Management Operations](#-kafka-ui--management-operations)
+  - [🛠️ Additional Open-Source Ecosystem Options](#-additional-open-source-ecosystem-options)
+- [📈 Star History](#-star-history)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support & Sponsorship](#-support--sponsorship)
+- [⚠️ Disclaimer & Operational Notes](#️-disclaimer--operational-notes)
+
+---
+
+## ⚡ Market Overview & Sector Analysis
+
+The global managed event streaming and Apache Kafka market size is estimated at **~$3.2 Billion in 2026**, growing at a CAGR of **~22%** driven by enterprise migration to real-time event-driven architectures and streaming analytics. The sector exhibits **moderate fragmentation with high concentration at the top**: hyper-scalers (Amazon MSK, Azure Event Hubs) and specialized event-streaming pioneer Confluent Cloud capture over **65% of enterprise market share**, while high-performance challengers (Redpanda Cloud) and niche multi-cloud/serverless providers (Aiven, Upstash) capture specialized serverless and low-latency segments.
+
+---
+
+## ☁️ SaaS & Commercial Managed Platforms
+
+Below is a comparison of top commercial managed Apache Kafka services, sorted by company size (valuation / enterprise revenue descending).
+
+| Platform 🚀 | Starting Tier Pricing 💰 | Free Tier / Trial Limit 🆓 | Market Valuation / Revenue 🏢 | Best For 🎯 |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Azure Event Hubs](https://azure.microsoft.com/en-us/products/event-hubs/)** | $0.015/hour (~$11/mo Basic) | $200 free credit (30-day Azure trial) | **~$3.1 Trillion** (Microsoft Valuation) | Azure-native streaming & big data integration |
+| **[Amazon MSK](https://aws.amazon.com/msk/)** | $0.042/hour per broker (~$30/mo) | AWS Free Tier: 750 hrs/mo MSK Serverless t3.small | **~$2.0 Trillion** (Amazon Valuation) | AWS-native serverless & cluster Kafka workloads |
+| **[IBM Event Streams](https://www.ibm.com/products/event-streams)** | $0.56/hour (~$400/mo Enterprise) | IBM Cloud $200 credit + 30-day trial | **~$200 Billion** (IBM Valuation) | IBM Cloud enterprise & Hybrid Cloud workloads |
+| **[Confluent Cloud](https://www.confluent.io/confluent-cloud/)** | $0.00/hr base ($0.10/GB throughput) | $400 free credit valid for 30 days | **~$9.5 Billion** (Public Market Cap / Valuation) | Enterprise standard event streaming & Flink SQL |
+| **[Aiven for Apache Kafka](https://aiven.io/kafka)** | $0.26/hour (~$187/mo startup tier) | $300 free credit for 30 days | **~$3.0 Billion** (Private Valuation) | Multi-cloud managed Kafka (AWS, GCP, Azure, DO) |
+| **[Instaclustr Kafka](https://www.instaclustr.com/)** | $0.14/hour per node (~$100/mo) | 30-day free trial (Small cluster node) | **~$500 Million** (Acquired by NetApp) | Open-source multi-service data stack management |
+| **[Redpanda Cloud](https://redpanda.com/)** | $0.20/hour (~$144/mo Serverless) | $300 free cloud credit for 14 days | **~$400 Million** (Private Series C Valuation) | Ultra-high performance C++ Kafka compatibility |
+| **[Lenses.io](https://lenses.io/)** | $350/month (Developer Edition) | 30-day free Developer License trial | **~$100 Million** (Acquired by Celonis) | Kafka governance, SQL queries & developer portal |
+| **[Upstash Kafka](https://upstash.com/kafka)** | $0.20 per 100k requests ($0.60/GB) | Free Tier: 10k msgs/day (Max 256MB storage) | **~$50 Million** (Private VC Backed) | Serverless per-request pricing & edge messaging |
+| **[CloudKarafka](https://www.cloudkarafka.com/)** | $5.00/month (Developer Duck tier) | Free Tier: Developer Plan (5 topics, 10MB storage) | **~$10 Million** (Private Bootstrapped/84codes) | Small to medium lightweight Kafka cluster hosting |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+### 📦 Kafka Core & Streaming Engines
+
+- **[Apache Kafka](https://github.com/apache/kafka)** [![Stars](https://img.shields.io/github/stars/apache/kafka?style=social&color=white)](https://github.com/apache/kafka/stargazers)  
+  *The de facto standard distributed event streaming platform.* Apache-2.0 licensed. Distributed, fault-tolerant, high-throughput pub/sub messaging engine powering modern real-time architectures.
+- **[Apache Pulsar](https://github.com/apache/pulsar)** [![Stars](https://img.shields.io/github/stars/apache/pulsar?style=social&color=white)](https://github.com/apache/pulsar/stargazers)  
+  *Multi-tenant, high-performance messaging and streaming engine.* Apache-2.0 licensed. Features native geo-replication, tiered storage, and unified pub/sub.
+- **[NATS Server](https://github.com/nats-io/nats-server)** [![Stars](https://img.shields.io/github/stars/nats-io/nats-server?style=social&color=white)](https://github.com/nats-io/nats-server/stargazers)  
+  *Cloud-native connective technology for pub/sub & JetStream persistence.* Apache-2.0 licensed. Lightweight, ultra-fast streaming engine for microservices and IoT.
+- **[Redpanda](https://github.com/redpanda-data/redpanda)** [![Stars](https://img.shields.io/github/stars/redpanda-data/redpanda?style=social&color=white)](https://github.com/redpanda-data/redpanda/stargazers)  
+  *Kafka-compatible event streaming platform written in C++.* BSL licensed. JVM-free, Zookeeper-free engine delivering up to 10x lower tail latencies.
+
+---
+
+### ☸️ Kubernetes Operators
+
+- **[Strimzi Kafka Operator](https://github.com/strimzi/strimzi-kafka-operator)** [![Stars](https://img.shields.io/github/stars/strimzi/strimzi-kafka-operator?style=social&color=white)](https://github.com/strimzi/strimzi-kafka-operator/stargazers)  
+  *Kubernetes-native operator for running Apache Kafka.* Apache-2.0 licensed. Simplifies Kafka deployment, Connect configuration, MirrorMaker, and Cruise Control on K8s.
+- **[Koperator](https://github.com/banzaicloud/koperator)** [![Stars](https://img.shields.io/github/stars/banzaicloud/koperator?style=social&color=white)](https://github.com/banzaicloud/koperator/stargazers)  
+  *Flexible Kubernetes operator for Kafka clusters by Banzaicloud.* Apache-2.0 licensed. Focuses on automated cluster provisioning, Cruise Control integration, and fine-grained broker setup.
+- **[Confluent Operator](https://github.com/confluentinc/operator)** [![Stars](https://img.shields.io/github/stars/confluentinc/operator?style=social&color=white)](https://github.com/confluentinc/operator/stargazers)  
+  *Commercial & cloud-native Kubernetes operator for Confluent Platform components.*
+
+---
+
+### 🔄 Stream Processing Frameworks
+
+- **[Apache Spark](https://github.com/apache/spark)** [![Stars](https://img.shields.io/github/stars/apache/spark?style=social&color=white)](https://github.com/apache/spark/stargazers)  
+  *Unified engine for large-scale data analytics & Structured Streaming.* Apache-2.0 licensed. Micro-batch streaming with exactly-once guarantees.
+- **[Apache Flink](https://github.com/apache/flink)** [![Stars](https://img.shields.io/github/stars/apache/flink?style=social&color=white)](https://github.com/apache/flink/stargazers)  
+  *Stateful stream processing standard for real-time data pipelines.* Apache-2.0 licensed. Low-latency, event-time processing with savepoints and state management.
+- **[Apache Beam](https://github.com/apache/beam)** [![Stars](https://img.shields.io/github/stars/apache/beam?style=social&color=white)](https://github.com/apache/beam/stargazers)  
+  *Unified programming model for batch and streaming pipelines.* Apache-2.0 licensed. Portable execution across Flink, Spark, and Google Cloud Dataflow.
+- **[ksqlDB](https://github.com/confluentinc/ksql)** [![Stars](https://img.shields.io/github/stars/confluentinc/ksql?style=social&color=white)](https://github.com/confluentinc/ksql/stargazers)  
+  *Event streaming database purpose-built for Apache Kafka.* Confluent Community License. SQL interface for defining stream processing queries and materialized views.
+- **[Kafka Streams](https://github.com/apache/kafka)** [![Stars](https://img.shields.io/github/stars/apache/kafka?style=social&color=white)](https://github.com/apache/kafka/stargazers)  
+  *Client library for building stream applications on Kafka.* Apache-2.0 licensed. Runs embedded inside Java applications without separate cluster dependencies.
+
+---
+
+### 🔀 Data Movement, Connectors & CDC
+
+- **[Vector](https://github.com/vectordotdev/vector)** [![Stars](https://img.shields.io/github/stars/vectordotdev/vector?style=social&color=white)](https://github.com/vectordotdev/vector/stargazers)  
+  *High-performance observability data pipeline.* MPL-2.0 licensed. Collects, transforms, and routes log and event data to Kafka and cloud sinks.
+- **[Debezium](https://github.com/debezium/debezium)** [![Stars](https://img.shields.io/github/stars/debezium/debezium?style=social&color=white)](https://github.com/debezium/debezium/stargazers)  
+  *Distributed Change Data Capture (CDC) platform.* Apache-2.0 licensed. Captures database row changes (MySQL, Postgres, Oracle, MongoDB) into Kafka topics.
+- **[Benthos / Redpanda Connect](https://github.com/redpanda-data/connect)** [![Stars](https://img.shields.io/github/stars/redpanda-data/connect?style=social&color=white)](https://github.com/redpanda-data/connect/stargazers)  
+  *Declarative stream processing buffer and ETL pipeline engine.* Apache-2.0 licensed. Code-free YAML pipeline config for stream transformation.
+- **[Kafka Connect](https://github.com/apache/kafka)** [![Stars](https://img.shields.io/github/stars/apache/kafka?style=social&color=white)](https://github.com/apache/kafka/stargazers)  
+  *Scalable tool for streaming data between Apache Kafka and other systems.* Apache-2.0 licensed. Standard framework for hundreds of open-source source/sink connectors.
+
+---
+
+### 🖥️ Kafka UI & Management Operations
+
+- **[Kafka UI](https://github.com/provectus/kafka-ui)** [![Stars](https://img.shields.io/github/stars/provectus/kafka-ui?style=social&color=white)](https://github.com/provectus/kafka-ui/stargazers)  
+  *Open-source web UI for Apache Kafka clusters.* Apache-2.0 licensed. Multi-cluster administration, topic browsing, consumer group tracking, and connector metrics.
+- **[AKHQ](https://github.com/tchiotludo/akhq)** [![Stars](https://img.shields.io/github/stars/tchiotludo/akhq?style=social&color=white)](https://github.com/tchiotludo/akhq/stargazers)  
+  *Kafka GUI for searching data, managing topics, consumer groups, and schema registry.* Apache-2.0 licensed.
+- **[Kafdrop](https://github.com/obsidiandynamics/kafdrop)** [![Stars](https://img.shields.io/github/stars/obsidiandynamics/kafdrop?style=social&color=white)](https://github.com/obsidiandynamics/kafdrop/stargazers)  
+  *Lightweight web UI for viewing Kafka topics and monitoring consumer lags.* Apache-2.0 licensed.
+- **[Cruise Control](https://github.com/linkedin/cruise-control)** [![Stars](https://img.shields.io/github/stars/linkedin/cruise-control?style=social&color=white)](https://github.com/linkedin/cruise-control/stargazers)  
+  *Automated cluster rebalancing and self-healing engine by LinkedIn.* BSD-2-Clause licensed.
+- **[Karafka](https://github.com/karafka/karafka)** [![Stars](https://img.shields.io/github/stars/karafka/karafka?style=social&color=white)](https://github.com/karafka/karafka/stargazers)  
+  *Multi-threaded Ruby framework for event-driven applications on Apache Kafka.* LGPL-3.0 licensed.
+
+---
+
+### 🛠️ Additional Open-Source Ecosystem Options
+
+- **[Fluent Bit](https://github.com/fluent/fluent-bit)** [![Stars](https://img.shields.io/github/stars/fluent/fluent-bit?style=social&color=white)](https://github.com/fluent/fluent-bit/stargazers) — Fast lightweight log/metric processor for Linux & K8s forwarding to Kafka.
+- **[Fluentd](https://github.com/fluent/fluentd)** [![Stars](https://img.shields.io/github/stars/fluent/fluentd?style=social&color=white)](https://github.com/fluent/fluentd/stargazers) — Unified data collector for log routing and ingestion into Kafka.
+- **[Apache NiFi](https://github.com/apache/nifi)** [![Stars](https://img.shields.io/github/stars/apache/nifi?style=social&color=white)](https://github.com/apache/nifi/stargazers) — Visual data flow automation and routing platform with native Kafka processors.
+- **[Logstash](https://github.com/elastic/logstash)** [![Stars](https://img.shields.io/github/stars/elastic/logstash?style=social&color=white)](https://github.com/elastic/logstash/stargazers) — Server-side data processing pipeline ingesting and sending Kafka streams.
+- **[Apache SeaTunnel](https://github.com/apache/seatunnel)** [![Stars](https://img.shields.io/github/stars/apache/seatunnel?style=social&color=white)](https://github.com/apache/seatunnel/stargazers) — High-performance distributed data integration engine supporting real-time Kafka sync.
+- **[Apache Samza](https://github.com/apache/samza)** [![Stars](https://img.shields.io/github/stars/apache/samza?style=social&color=white)](https://github.com/apache/samza/stargazers) — Stateful stream processing framework integrated with Apache Kafka.
+- **[Embulk](https://github.com/embulk/embulk)** [![Stars](https://img.shields.io/github/stars/embulk/embulk?style=social&color=white)](https://github.com/embulk/embulk/stargazers) — Open-source bulk data loader supporting Kafka input/output plugins.
+- **[Apache Storm](https://github.com/apache/storm)** [![Stars](https://img.shields.io/github/stars/apache/storm?style=social&color=white)](https://github.com/apache/storm/stargazers) — Distributed real-time computation system for streaming data.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Managed-Apache-Kafka-Service&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Managed-Apache-Kafka-Service&type=date&legend=top-left)
+
+---
+
+## 🤝 How to Contribute
+
+1. Fork this repository.
+2. Add or update entries in `README.md` maintaining table/markdown list formatting.
+3. Ensure pricing, free tier limits, and GitHub link details remain factual and clear.
+4. Open a Pull Request with a brief explanation of your suggested addition!
+
+Check out [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome) for more curated lists!
+
+---
+
+## 💖 Support & Sponsorship
+
+If you find this curated list helpful for evaluating managed Kafka options or designing your data architecture, please consider:
+- 🌟 **Starring** this repository to increase visibility.
+- 🔀 **Sharing** it with team members, data engineers, and cloud architects.
+- ☕ **Sponsoring** the maintainer via [GitHub Sponsors](https://github.sponsors/ishandutta2007).
+
+---
+
+## ⚠️ Disclaimer & Operational Notes
+
+- This list is **community-curated** for architectural research and comparison — not an official endorsement.
+- **Licensing Considerations**: Verify project licenses before production adoption (e.g., Redpanda uses BSL, ksqlDB uses Confluent Community License, Apache Kafka/Strimzi use Apache-2.0).
+- **Zookeeper Deprecation**: Apache Kafka has fully transitioned to **KRaft mode** (KIP-833). Avoid deploying Zookeeper for new clusters.
